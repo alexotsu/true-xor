@@ -1,5 +1,7 @@
 # True XOR
 
+From the Quill CTF "[True XOR](https://quillctf.super.site/challenges/quillctf-challenges/true-xor)" challenge
+
 ## Approach
 Initially, I thought having a simple persistent state variable in **BoolGiver** would do the trick; flip it to true once it had been called once, then flip it to false when it gets called again. This obviously didn't work as it was modifying the state of a contract, thus violating the `view` property of **callMe**.
 
